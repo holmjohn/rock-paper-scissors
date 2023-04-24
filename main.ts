@@ -10,6 +10,14 @@ function check_winner () {
                 # . . . .
                 # # # # .
                 `)
+        } else {
+            basic.showLeds(`
+                # . # . #
+                # . # . #
+                # . # . #
+                # . # . #
+                . # . # .
+                `)
         }
     } else {
     	
