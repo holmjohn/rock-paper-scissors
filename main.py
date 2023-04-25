@@ -10,6 +10,14 @@ def check_winner():
                                 # . . . .
                                 # # # # .
             """)
+        else:
+            basic.show_leds("""
+                # . # . #
+                                # . # . #
+                                # . # . #
+                                # . # . #
+                                . # . # .
+            """)
     else:
         pass
 

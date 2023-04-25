@@ -10,7 +10,7 @@ function check_winner () {
                 # . . . .
                 # # # # .
                 `)
-        } else {
+        } else if (opponent_choice == "Scissors") {
             basic.showLeds(`
                 # . # . #
                 # . # . #
@@ -18,6 +18,8 @@ function check_winner () {
                 # . # . #
                 . # . # .
                 `)
+        } else {
+        	
         }
     } else {
     	
@@ -46,6 +48,7 @@ let choice = ""
 choice = "None"
 opponent_choice = ""
 radio.setGroup(1)
+radio.sendNumber(0)
 basic.forever(function () {
     check_winner()
 })
